@@ -12,6 +12,7 @@ export default function PinCodeForm() {
     e.preventDefault();
     if (pincode.length < 6) {
       setError("The code is not 6 digits");
+      setPincode("")
       return;
     }
 

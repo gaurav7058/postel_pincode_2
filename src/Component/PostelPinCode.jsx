@@ -37,7 +37,7 @@ export default function PostelPinCode() {
         </div>
     <div className='pincode-container'>
       {
-        filterData ?(filterData.map((item,index)=>{
+        filterData.length>0 ?(filterData.map((item,index)=>{
             return(
                 <div className="pincode-item" key={index}>
                     <h1>Name: {item.Name}</h1>
